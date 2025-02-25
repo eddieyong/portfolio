@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Yong Jaan Xiong - Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    .portfolio-content {
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .portfolio-content .img-container {
+      width: 100%;
+      height: 300px; /* Fixed height for all portfolio images */
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .portfolio-content .img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* This will maintain aspect ratio while covering the container */
+    }
+
+    /* Enhanced profile image roundness */
+    .profile-img img {
+      border-radius: 50%;
+      border: 8px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin: 15px auto;
+      transition: all 0.3s ease;
+    }
+
+    .profile-img img:hover {
+      transform: scale(1.05);
+      border-color: rgba(255, 255, 255, 0.4);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Social links enhancement */
+    .social-links a {
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      transform: translateY(-3px);
+    }
+  </style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/eddie.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1>Yong Jaan Xiong</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://wa.me/601116628303" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://github.com/eddieyong" target="_blank" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/yong-jaan-xiong-1065a7242/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/tech.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Yong Jaan Xiong
+        </h2>
+        <p>I'm <span class="typed" data-typed-items="Developer, Freelancer, Programmer">Programmer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Passionate software developer with expertise in both frontend and backend development. Committed to creating efficient, scalable, and user-friendly applications while staying current with the latest technologies and industry best practices.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/eddie.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Frontend &amp; Backend Developer</h2>
+            <p class="fst-italic py-3">
+              Dedicated full-stack developer with a strong foundation in web technologies and a keen eye for creating seamless user experiences. Specialized in building responsive web applications and RESTful APIs.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>7 January 2003</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>blank</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+6011 1662 8303</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Kuala Lumpur</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>Degree</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>eddie.yong07@hotmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              As a software developer, I specialize in creating modern web applications using technologies like HTML5, CSS3, JavaScript, and PHP. I have experience in developing both client-side and server-side applications, with a strong focus on writing clean, maintainable code and implementing responsive design principles. My goal is to build innovative solutions that solve real-world problems while ensuring optimal performance and user experience.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Technical proficiencies developed through hands-on experience in web development, software engineering, and database management. Continuously expanding knowledge in emerging technologies and development methodologies.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CSS</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Database</span> <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Adobe Skill</span> <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>A comprehensive overview of my professional journey in software development, showcasing my educational background, technical expertise, and hands-on experience in developing web applications and software solutions. My career path reflects a consistent growth in both technical skills and project management capabilities.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Achievements</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Invited Fusionex to YPC International College</h4>
+              <p><em>Effectively organized and executed, with a turnout of over 100 students that actively engaged to the talk</em></p>
+              <ul>
+              
+              </ul>
+<br>
+              <h4>Completed a Horror Game within a month using UE5</h4>
+              <p><em>The Horror Game is done by using Unreal Engine 5 by using blueprints, assets and maps. Also with AI Chasing Mechanics.</em></p>
+              <ul>
+              
+              </ul>
+
+              
+
+              
+            </div><!-- Edn Resume Item -->
+
+            
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Science (Hons) Multimedia Computing</h4>
+              <h5>2021 - Current</h5>
+              <p>Degree Students on Final Year Project Developing over few websites to making games</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Malaysian Certificate of Education (SPM)</h4>
+              <h5>2016 - 2020</h5>
+              <p>Sekolah Menengah Kebangsaan Taman Connaught</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Discord Server Manager</h4>
+              <h5>2022 - 2023</h5>
+              <ul>
+                <li>Executed outstanding abilities on attention to detail in solving member's issues while supervising the other part of the server</li>
+                <li>Assisted members on crypto wallet issues and provided accurate instruction </li>
+                <li>Organized each channel to look clean and informative</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Crypto Moderator</h4>
+              <h5>2023 - 2024</h5>
+              <ul>
+                <li>Moderated several larga Discord communities, ensuring a positive and engaging environment while providing clear and informative responses to project-related inquiries.</li>
+                <li>Supported members in navigating and utilizing Web3 wallets, such as MetaMask, for various project activities.</li>
+                <li>Managed member support ticket daily, addressing complaints, troubleshooting issues, and resolving blockchain-related queries efficiently.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Showcase of my recent projects and development work, demonstrating my technical capabilities and creative solutions in software development.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <div class="img-container">
+                <img src="assets/img/portfolio/ard1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="portfolio-info">
+                <h4>Arduino Project</h4>
+                <p>Collaborated in a team to develop a system that integrates an 
+                  Arduino UNO board for real-time data collection and storage.
+                  </p>
+                <a href="assets/img/portfolio/ard1.jpg" title="Arduino Project" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <div class="img-container">
+                <img src="assets/img/portfolio/nexus1.png" class="img-fluid" alt="">
+              </div>
+              <div class="portfolio-info">
+                <h4>Advanced Interactive Multimedia</h4>
+                <p>Designed and developed a dynamic website utilizing HTML, CSS, and JavaScript, integrating animations created with 
+                  Adobe Illustrator and Adobe Animator.
+                  </p>
+                <a href="assets/img/portfolio/nexus1.png" title="JoyNexus Project" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="joynexus-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <div class="img-container">
+                <img src="assets/img/portfolio/maiden.png" class="img-fluid" alt="">
+              </div>
+              <div class="portfolio-info">
+                <h4>Mixed Reality: The Silent Town</h4>
+                <p>Developed an interactive horror game using Unreal Engine 5, using Blueprints for programming and custom-built map designs.</p>
+                <a href="assets/img/portfolio/maiden.png" title="The Silent Town" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="silenttown-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <div class="img-container">
+                <img src="assets/img/portfolio/silo1.png" class="img-fluid" alt="">
+              </div>
+              <div class="portfolio-info">
+                <h4>Logistic Inventory System</h4>
+                <p>Developed a fully functional Logistic Inventory System using HTML, CSS, JavaScript, and PHP, incorporating a robust 
+                  role-based access system with five distinct user roles.</p>
+                <a href="assets/img/portfolio/silo1.png" title="Logistic Inventory System" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="silo-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <div class="img-container">
+                <img src="assets/img/portfolio/Screenshot 2025-02-10 171237.png" class="img-fluid" alt="">
+              </div>
+              <div class="portfolio-info">
+                <h4>Crypto Moderator
+                </h4>
+                <p>Moderated several large Discord communities, ensuring a positive and engaging environment while providing clear and informative 
+                </p>
+                <a href="assets/img/portfolio/Screenshot 2025-02-10 171237.png" title="Crypto Moderator
+                " data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="crypto-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <div class="img-container">
+                <img src="assets/img/portfolio/fusionex1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="portfolio-info">
+                <h4>Invited Fusionex to YPC International College for a talk
+                </h4>
+                <p>Effectively organized and executed, with a turnout of over 100 students that activelyengaged to the talk.
+                </p>
+                <a href="assets/img/portfolio/fusionex1.jpg" title="Invited Fusionex to YPC International College for a talk
+                " data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="fusionex-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+        </div><!-- End Portfolio Container -->
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Offering comprehensive development solutions with expertise in web development, game development, and community management. Committed to delivering high-quality, innovative solutions tailored to meet client needs.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-code-square"></i></div>
+            <div>
+              <h4 class="title">Web Development</h4>
+              <p class="description">Full-stack web development using modern technologies including HTML5, CSS3, JavaScript, PHP, and MySQL. Specializing in responsive design and user-friendly interfaces.</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-controller"></i></div>
+            <div>
+              <h4 class="title">Game Development</h4>
+              <p class="description">Creating immersive gaming experiences using Unreal Engine 5, with expertise in Blueprint programming, level design, and AI implementation.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-database"></i></div>
+            <div>
+              <h4 class="title">Database Management</h4>
+              <p class="description">Design and implementation of efficient database systems, ensuring data integrity, security, and optimal performance for various applications.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-people"></i></div>
+            <div>
+              <h4 class="title">Community Management</h4>
+              <p class="description">Expert community management for Discord servers and Web3 projects, focusing on user engagement, moderation, and technical support.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-window-desktop"></i></div>
+            <div>
+              <h4 class="title">UI/UX Design</h4>
+              <p class="description">Creating intuitive and visually appealing user interfaces with focus on user experience, accessibility, and modern design principles.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-gear"></i></div>
+            <div>
+              <h4 class="title">System Integration</h4>
+              <p class="description">Seamless integration of various systems and technologies, ensuring efficient communication and operation between different components.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Feedback and recommendations from colleagues and clients who have experienced my work ethic, technical capabilities, and collaborative approach to software development projects.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>One of my best dream is to a developer that can make millions</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/kesheng.jpg" class="testimonial-img" alt="">
+                <h3>Woo Ke Sheng</h3>
+                <h4>Professional Developer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Feel free to reach out for collaboration opportunities, project inquiries, or any questions about my services in web development, game development, or community management.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-lg-8">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Location</h3>
+                  <p>Kuala Lumpur, Malaysia</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-phone flex-shrink-0"></i>
+                <div>
+                  <h3>Contact Number</h3>
+                  <p>+6011 1662 8303</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>eddie.yong07@hotmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-briefcase flex-shrink-0"></i>
+                <div>
+                  <h3>Available For</h3>
+                  <p>• Full-stack Development<br>
+                     • Game Development<br>
+                     • Community Management<br>
+                     • Freelance Projects</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1">Yong Jaan Xiong</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
