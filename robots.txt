@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eddieyong.github.io/portfolio/sitemap.xml 
